@@ -12,7 +12,7 @@ def formatting(fact: str):
     return fact.title()
 
 
-@flow(persist=True)
+@flow
 def pipe():
     fact = fetch_cat_fact()
     print(formatting(fact))
